@@ -1,0 +1,196 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Steff}{Bisinger}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(701)~484~3130}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{srbising@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.srbising.me}                         % optional, remove / comment the line if not wanted
+\extrainfo{github.com/regalcat}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2018}{Masters of Science in Information Assurance and Computer Engineering}{Iowa State University}{Ames, IA}{\textit{GPA: 3.81}}{Specialization in Secure and Reliable Computing\\
+Major professor: Dr Doug Jacobson}  % arguments 3 to 6 can be left empty
+\cventry{2011--2016}{Bachelor of Science in Software Engineering}{Iowa State University}{Ames, IA}{}{}
+
+%\section{Masters thesis}
+%\cvitem{Title}{\emph{}}
+%\cvitem{Supervisors}{Supervisors}
+%\cvitem{Description}{Short thesis abstract}
+
+\section{Experience}
+\subsection{Research}
+\cventry{2017--2018}{Research Assistant}{Argonne National Laboratory}{Lemont, IL}{}{Argonne's COAR group is a team of researchers dedicated to making advancements in the field of cybersecurity.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+    \item Implement code quality controls for the group’s research code bases. This will
+help the group get their code ready to be used in a production environment and
+continue to assure that the code is of acceptable quality as new features are
+added.
+    \item Transform a research code base into production-ready code by auditing it,
+refactoring the code, and adding unit tests.
+    \item Create graphics and research poster for a project.
+    \item Co-authored a paper on a moving target defense solution for web servers.
+\end{itemize}
+}
+\cventry{2013--2018}{Research Assistant}{ISEAGE Lab, Iowa State University}{Ames, IA}{}{The ISEAGE lab at Iowa State University hosts 5 cyber defense competitions at varying levels of education each year with the goal of offering students and professionals a safe environment in which to practice their security skills.\newline{}
+Detailed achievements:%
+\begin{itemize}
+    \item Rewrote the scoring system’s availability testing functionality using Celery, a
+library for creating and managing worker processes. This allows the scoring
+system to better utilize server resources under heavy load.
+    \item Directed the 2015 National Cyber Defense Competition.
+    \item Created vulnerable applications for Cyber Defense Competitions.
+    \item Led Red Team in attacks against Blue Teams' systems.
+    \item Led Green Team in assessing the usability of Blue Teams' systems.
+\end{itemize}
+}
+\newpage
+\subsection{Professional}
+\cventry{2016--2016}{Network Security Intern}{Rockwell Collins}{Cedar Rapids, IA}{}{
+Detailed achievements:%
+\begin{itemize}
+    \item Assisted in replacing and upgrading access token infrastructure.
+    \item Analyzed and cleaned up firewall rules.
+    \item Modified Perl scripts to aid in gathering and analyzing firewall logs.
+\end{itemize}}
+\cventry{2015--2015}{Security Intern}{Workiva}{Ames, IA}{}{Workiva is a software startup that creates products that make SEC filings easy.\newline{}
+Detailed achievements:%
+\begin{itemize}
+    \item Assessed the security of internal web applications using tools like BurpSuite and
+custom Python code.
+    \item Assisted with company-wide security training by developing a tool for visualizing
+the performance of individual employees in previous trainings.
+    \item Contributed code to fix minor bugs in the company’s main product.
+\end{itemize}}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Intermediate}{Four years of high school classes}
+\cvitemwithcomment{Russian}{Novice}{One university course and some self study}
+
+\section{Publications}
+\cvitem{Polymorphic Rotational Web Server A Moving Target Defense Solution.}{In progress.}
+
+\section{Software skills}
+\cvdoubleitem{Programming Languages}{Python, Java, C, Scala, Erlang, Bash, HTML5, CSS,
+Javascript}{Software Development}{PyCharm, Eclipse, GCC, GDB}
+\cvdoubleitem{Penetration Testing}{Wifi Pineapple, Bash Bunny, BurpSuite, Metasploit w/ custom modules}{Large Dataset Analysis Tools}{Apache Hadoop, Apache HDFS, Apache Spark, ElasticSearch}
+\cvdoubleitem{Forensics/Analysis}{Wireshark, Volatility, IDAPro}{Web Application Frameworks}{Django, Flask}
+
+\section{Outreach}
+\cventry{2016--2018}{Wifi/Field Technical Advisor}{FIRST Tech Challenge}{Various locations, IA}{}{FIRST Tech Challenge is a program that teaches high school students problem solving and the engineering process through robotics challenges.}
+\cventry{2013--2016}{Level 2 Coach}{USA Archery}{Alburnett, IA}{}{USA Archery's Junior Olympic Archery Development program prepares young archers to be competitive at a national and international level while teaching them respect, confidence, and self-awareness.}
+\cventry{2011--2013}{Assistant Coach}{Alburnett Archery, National Archery in the Schools Program}{Alburnett, IA}{}{The National Archery in the Schools Program teaches archers grades 4 through 12 integrity and confidence.}
+
+\section{Affiliations}
+\cvitem{CyberCorps Scholarship for Service}{CyberCorps Scholarship for Service funds students pursuing degrees in the field of cybersecurity who then serve government entities.}
+\cvitem{Information Assurance Student Group}{Iowa State University's Information Assurance Student Group is a club that meets weekly to share cybersecurity knowledge.}
+\cvitem{SecDSM}{SecDSM is a cybersecurity organization that gathers professionals from the area to network.}
+
+\section{Professional Development}
+\cvitem{Wild West Hackin' Fest Capture the Flag Competition 2017}{First place team}
+\cvitem{National Cyber Analyst Challenge}{Hosted by Lockheed Martin, Leidos, and Temple University
+\begin{itemize}
+    \item Finalist team 2016
+    \item First place team 2015
+\end{itemize}}
+\cvitem{Cyber Defense Competition}{Hosted at Iowa State University by ISEAGE
+\begin{itemize}
+    \item Captain of first place team, Nationals 2014
+    \item Captain of first place team, Fall 2013
+\end{itemize}}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Professional}{\begin{itemize}\item Dr Jim Davis\item Dr John Burnley\item Dr Ben Blakely\end{itemize}}
+  \cvcolumn{Character}{Amongst others:\begin{itemize}\item Vance Patrilla, and\item Dr Jan Weirsema\end{itemize}}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
