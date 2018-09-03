@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -27,7 +27,7 @@
 \name{Steff}{Bisinger}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 %\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{(701)~484~3130}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{(319)~350~3130}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{srbising@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -54,98 +54,97 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2016--2018}{Masters of Science in Information Assurance and Computer Engineering}{Iowa State University}{Ames, IA}{\textit{GPA: 3.81}}{Specialization in Secure and Reliable Computing\\
-Major professor: Dr Doug Jacobson}  % arguments 3 to 6 can be left empty
-\cventry{2011--2016}{Bachelor of Science in Software Engineering}{Iowa State University}{Ames, IA}{}{}
+\cventry{Aug 2016--May 2018}{Masters of Science in Information Assurance}{Iowa State University}{Ames, IA}{\textit{GPA: 3.80/4.0}}{Cybercorp Scholarship for Service (SFS)\\
+Major professor: Dr Doug Jacobson\\
+Thesis: \textit{A Rotational Moving Target Defense Solution for Web Servers}}  % arguments 3 to 6 can be left empty
+\cventry{Aug 2011--May 2016}{Bachelor of Science in Software Engineering}{Iowa State University}{Ames, IA}{}{}
 
 %\section{Masters thesis}
 %\cvitem{Title}{\emph{}}
 %\cvitem{Supervisors}{Supervisors}
 %\cvitem{Description}{Short thesis abstract}
 
+\section{Software skills}
+\cvdoubleitem{Linux OS Distributions}{Debian, Ubuntu, CentOS, Fedora, Kali}{Virtualization}{VMWare vSphere, VMWare vCenter, Virtualbox, Esxi}
+\cvdoubleitem{Programming Languages}{Python, Java, C, Scala, Erlang, Bash, HTML5, CSS,
+Javascript}{Software Development}{PyCharm, Eclipse, GCC, GDB, Git, Gitlab, Atlassian Jira}
+\cvdoubleitem{Penetration Testing}{Wifi Pineapple, Bash Bunny, BurpSuite, Metasploit w/ custom modules}{Databases/Data Analysis Tools}{SQL, Splunk, Apache Hadoop, Apache HDFS, Apache Spark, ElasticSearch}
+\cvdoubleitem{Forensics/Analysis}{Wireshark, IDAPro, Volatility, Bless(hex editor)}{Web Application Frameworks}{Django, Flask}
+
 \section{Experience}
-\subsection{Research}
-\cventry{2017--2018}{Research Assistant}{Argonne National Laboratory}{Lemont, IL}{}{Argonne's COAR group is a team of researchers dedicated to making advancements in the field of cybersecurity.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-    \item Implement code quality controls for the group’s research code bases. This will
-help the group get their code ready to be used in a production environment and
-continue to assure that the code is of acceptable quality as new features are
-added.
-    \item Transform a research code base into production-ready code by auditing it,
-refactoring the code, and adding unit tests.
-    \item Create graphics and research poster for a project.
-    \item Co-authored a paper on a moving target defense solution for web servers.
-\end{itemize}
-}
-\cventry{2013--2018}{Research Assistant}{ISEAGE Lab, Iowa State University}{Ames, IA}{}{The ISEAGE lab at Iowa State University hosts 5 cyber defense competitions at varying levels of education each year with the goal of offering students and professionals a safe environment in which to practice their security skills.\newline{}
+\cventry{Nov 2013--May 2018}{Research Assistant}{Internet-Scale Event and Attack Generation Environment (ISEAGE) Lab}{Ames, IA}{10 hours/week, \$12/hour}{The ISEAGE lab at Iowa State University hosts 5 cyber defense competitions at varying levels of education each year with the goal of offering students and professionals a safe environment in which to practice their security skills.\newline{}
 Detailed achievements:%
 \begin{itemize}
-    \item Rewrote the scoring system’s availability testing functionality using Celery, a
-library for creating and managing worker processes. This allows the scoring
-system to better utilize server resources under heavy load.
-    \item Directed the 2015 National Cyber Defense Competition.
-    \item Created vulnerable applications for Cyber Defense Competitions.
-    \item Led Red Team in attacks against Blue Teams' systems.
-    \item Led Green Team in assessing the usability of Blue Teams' systems.
+    \item Rewrote the scoring systems availability testing functionality using Celery, a library for creating and managing worker processes, allowing the scoring system to better utilize server resources under heavy user load
+    \item Organized Cyber Defense Competitions for \textasciitilde 100 student participants
+    \item Created vulnerable applications to teach students participants about vulnerabilities and attack surface
+    \item Customer service: Worked with participants to troubleshoot and resolve problems with vCenter, Apache,
+    and a number of other technologies
+    \item Evaluated participant systems for vulnerabilities as part of a team of 20+ industry professionals
 \end{itemize}
 }
 \newpage
-\subsection{Professional}
-\cventry{2016--2016}{Network Security Intern}{Rockwell Collins}{Cedar Rapids, IA}{}{
+\cventry{May 2017--Jan 2018}{Research Assistant}{Argonne National Laboratory}{Lemont, IL}{40 hours/week, \$24/hour}{%
 Detailed achievements:%
-\begin{itemize}
-    \item Assisted in replacing and upgrading access token infrastructure.
-    \item Analyzed and cleaned up firewall rules.
-    \item Modified Perl scripts to aid in gathering and analyzing firewall logs.
-\end{itemize}}
-\cventry{2015--2015}{Security Intern}{Workiva}{Ames, IA}{}{Workiva is a software startup that creates products that make SEC filings easy.\newline{}
-Detailed achievements:%
-\begin{itemize}
-    \item Assessed the security of internal web applications using tools like BurpSuite and
-custom Python code.
-    \item Assisted with company-wide security training by developing a tool for visualizing
-the performance of individual employees in previous trainings.
-    \item Contributed code to fix minor bugs in the company’s main product.
-\end{itemize}}
+\begin{itemize}%
+    \item Implemented processes for using software configuration management and tracking issues and milestones for 2 research code bases in order to assure code quality
+    \item Refactored and produced unit tests for a research code base to prepare it for production use
+    \item Created graphics, research poster, and documentation for a project
+    \item Co-authored a paper on a moving target defense solution for web servers
+\end{itemize}
+}
 
-\section{Software skills}
-\cvdoubleitem{Programming Languages}{Python, Java, C, Scala, Erlang, Bash, HTML5, CSS,
-Javascript}{Software Development}{PyCharm, Eclipse, GCC, GDB}
-\cvdoubleitem{Penetration Testing}{Wifi Pineapple, Bash Bunny, BurpSuite, Metasploit w/ custom modules}{Large Dataset Analysis Tools}{Splunk, Apache Hadoop, Apache HDFS, Apache Spark, ElasticSearch}
-\cvdoubleitem{Forensics/Analysis}{Wireshark, Volatility, IDAPro}{Web Application Frameworks}{Django, Flask}
+\cventry{May 2016--Aug 2016}{Network Security Intern}{Rockwell Collins}{Cedar Rapids, IA}{40 hours/week, \$20/hour}{
+Detailed achievements:%
+\begin{itemize}
+    \item Customer Service: Worked with 25+ internal customers to upgrade two-factor authentication tokens
+    \item Eliminated 30+ redundant firewall rules and installed and configured a web application for tracking firewall rules to enhance network security and performance
+    \item Maintained \textasciitilde 5 scripts for gathering and analyzing firewall logs
+    \item Customer service: Worked with internal customers around the world to install and maintain firewalls
+    \item Advised on the selection of email solutions based on NIST special publications and FIPS documentation
+\end{itemize}}
+\cventry{May 2015--Aug 2015}{Security Intern}{Workiva}{Ames, IA}{40 hours/week, \$16/hour}{Workiva is a software startup that creates products that make SEC filings easy.\newline{}
+Detailed achievements:%
+\begin{itemize}
+    \item Performed risk and security assessments of internal web applications using tools like BurpSuite and
+custom Python code
+    \item Developed a Flask web application for tracking success of company-wide security training
+    \item Contributed code to fix bugs in the company’s main product
+    \item Gained experience with software lifecycle management tools such as Git and cloud platforms such as Google App Engine
+\end{itemize}}
 
 \section{Professional Development}
-\cvitem{Wild West Hackin' Fest Capture the Flag Competition 2017}{First place team}
-\cvitem{DEFCON Internet of Things Village Capture the Flag Competition 2017}{Competed and got on the board.}
-\cvitem{National Cyber Analyst Challenge}{Hosted by Lockheed Martin, Leidos, and Temple University
+\cvitem{BSides Iowa 2018 Capture the Flag(CTF) hosted by SecDSM}{First place team. Challenges included lockpicking, steganography, and cryptography.}
+\cvitem{Wild West Hackin' Fest CTF Competition 2017}{First place team. Challenges included lockpicking, steganography, and web application exploitation.}
+\cvitem{DEFCON Internet of Things Village CTF 2017}{Competed and got on the board. Challenges included exploitation of wireless routers and NAS systems.}
+\cvitem{National Cyber Analyst Challenge}{Hosted by Lockheed Martin, Leidos, and Temple University. Gained experience with advanced applications of Autopsy, Volatility, and Wireshark.
 \begin{itemize}
-    \item Team mentor 2018
+    \item Team mentor, finalist team 2018
     \item Finalist team 2016
     \item First place team 2015
 \end{itemize}}
-\cvitem{Cyber Defense Competition}{Hosted at Iowa State University by ISEAGE
+\cvitem{Cyber Defense Competition}{Hosted at Iowa State University by ISEAGE. Gained experience with Linux system administration, particularly Apache, Nginx, and FTP servers.
 \begin{itemize}
     \item Captain of first place team, Nationals 2014
     \item Captain of first place team, Fall 2013
 \end{itemize}}
 
 \section{Languages}
-\cvitem{English}{Native speaker}
+\cvitemwithcomment{English}{Native speaker}{Accomplished technical writer}
 \cvitemwithcomment{Spanish}{Intermediate}{Four years of high school classes}
 \cvitemwithcomment{Russian}{Novice}{One university course and some self study}
 
 \section{Publications}
-\cvitem{Polymorphic Rotational Web Server A Moving Target Defense Solution.}{In progress.}
+\cvitem{A Rotational Moving Target Defense Solution for Web Servers.}{In progress.}
 
 \section{Outreach}
-\cventry{2016--2018}{Wifi/Field Technical Advisor}{FIRST Tech Challenge}{Various locations, IA}{}{FIRST Tech Challenge is a program that teaches high school students problem solving and the engineering process through robotics challenges.}
-\cventry{2013--2016}{Level 2 Coach}{USA Archery}{Alburnett, IA}{}{USA Archery's Junior Olympic Archery Development program prepares young archers to be competitive at a national and international level while teaching them respect, confidence, and self-awareness.}
+\cventry{Feb 2016--Mar 2018}{Wifi/Field Technical Advisor}{FIRST Tech Challenge}{Various locations, IA}{}{FIRST Tech Challenge is a program that teaches high school students problem solving and the engineering process through robotics challenges. I provided advice and assistance in troubleshooting connectivity problems between the Android phones used to control the robots.}
+\cventry{2013--2016}{Level 2 Coach}{USA Archery}{Alburnett, IA}{}{USA Archery's Junior Olympic Archery Development program prepares young archers to be competitive at a national and international level while teaching them respect, confidence, and self-awareness. As a coach, I provided encouragement and constructive feedback to archers in order to help them reach their goals.}
 \cventry{2011--2013}{Assistant Coach}{Alburnett Archery, National Archery in the Schools Program}{Alburnett, IA}{}{The National Archery in the Schools Program teaches archers grades 4 through 12 integrity and confidence.}
 
 \section{Affiliations}
-\cvitem{CyberCorps Scholarship for Service}{CyberCorps Scholarship for Service funds students pursuing degrees in the field of cybersecurity who then serve government entities.}
-\cvitem{Information Assurance Student Group}{Iowa State University's Information Assurance Student Group is a club that meets weekly to share cybersecurity knowledge.}
+\cvitem{CyberCorps Scholarship for Service}{CyberCorps Scholarship for Service funds students pursuing degrees in the field of cybersecurity who then serve government entities. Iowa State's Cybercorps curriculum also includes four semesters of training in leadership and effective communication.}
+\cvitem{Information Assurance Student Group}{Iowa State University's Information Assurance Student Group is a club that meets weekly to share cybersecurity knowledge. Through this group, I presented on topics such as SQL, wireless security protocols, domain fronting, and Bash programming.}
 \cvitem{SecDSM}{SecDSM is a cybersecurity organization that gathers professionals from the area to network.}
 
 \section{References}
